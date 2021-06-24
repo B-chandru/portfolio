@@ -84,6 +84,7 @@
       color: var(--color2);
     }
     #top-a{
+      margin-top:10px;
       text-decoration: none;
       padding: 10px;
       border: 2px solid var(--color1);
@@ -98,7 +99,7 @@
     }
    .left h1{
 
-     font-size: 7vh;
+     font-size: 5vh;
      letter-spacing:1px;
 
     }
