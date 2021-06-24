@@ -96,7 +96,11 @@
        font-weight: 900;
 
     }
-   
+   .left h1{
+
+     font-size: 7vh;
+
+    }
     
 
     .right{
