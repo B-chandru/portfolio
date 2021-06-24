@@ -76,10 +76,6 @@
       place-items: center;
       color: var(--color1);
     }
-    .button{
-      margin-top: 21px;
-      margin-left: 41px;
-    }
     #ani{
       color: var(--color2);
     }
@@ -95,12 +91,6 @@
       background: chartreuse;
       border: 2px solid var(--color3);
        font-weight: 900;
-
-    }
-   .left h1{
-
-     font-size: 5vh;
-     letter-spacing:1px;
 
     }
     
@@ -120,8 +110,8 @@
     /* project */
     .center{
       margin-top: 93px;
-display: grid;
-place-items: center;
+       display: grid;
+       place-items: center;
     }
     #P_1{
       color: var(--color2);
@@ -299,6 +289,9 @@ place-items: center;
         grid-gap: 0px;
         background:var(--color3);
       }
+       .left h1{
+     font-size: 8vh;
+    }
     } 
 
       
