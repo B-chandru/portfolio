@@ -105,7 +105,9 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
-
+    .left h1{
+     font-size: 4vh;
+    }
 
     /* project */
     .center{
