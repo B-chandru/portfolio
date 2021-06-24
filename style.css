@@ -106,7 +106,7 @@
       background-repeat: no-repeat;
     }
     .left h1{
-     font-size: 4vh;
+     font-size: 50px;
     }
 
     /* project */
@@ -349,3 +349,10 @@
         background: #1b0909;
       }
     }
+
+  @media screen and (max-width:360px) {
+            html{
+               width: fit-content; 
+            }
+            
+        }
