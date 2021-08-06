@@ -49,11 +49,10 @@
     color: var(--color2);
     margin-left: 40px;
     text-decoration: none;
+     transition: all 0.3s linear 0s;
   }
   header .nav li a:hover{
     color: var(--color1);
-    letter-spacing: 2px;
-
   }
 
 
