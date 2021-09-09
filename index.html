@@ -14,17 +14,14 @@
 </head>
 <body>
 
-                                <!--For hamburger menu  -->
+                                <!--For menu  -->
     <header>
-        <a href="#" class="logo"></a>
-        <div class="toggle" onclick="menu()"><i class="fas fa-bars"></i></div>
-        <ul class="nav" >
-            <li><a href="#">home</a></li>
-            <li><a href="project.html">project</a></li>
-           <li><a href="#con">contact</a></li>
-
-        </ul>
-    </header>
+      <ul class="nav" >
+          <li><a href="#"><i class="fas fa-home"></i><span id="top_P">Home</span></a></li>
+          <li><a href="project.html"><i class="far fa-folder"></i><span id="top_P"> Project</span> </a></li>
+         <li><a href="#con"><i class="fas fa-phone-alt"></i><span id="top_P">Contact</span></a></li>
+      </ul>
+  </header>
 
 
                                     <!-- FOR my name display -->
@@ -32,13 +29,9 @@
 
     <div class="main">
         <div class="left">
-           <!-- <div class="content"> -->
-                <h1 >Chandru </h1>
+                   <h1 >Chandru </h1>
                 <p id="ani">a front-end web developer</p>
-                  <a  id="top-a" href="./Resume/Chandru_B.pdf" download="resume.pdf">My Resume</a>
-
-         <!-- </div> -->
-            
+                  <a  id="top-a" href="" >My Resume</a>
         </div>
         <div class="right">   
           <!-- the image used for this background is from <a href="https://storyset.com/web">Web illustrations by Storyset</a> -->
@@ -116,13 +109,6 @@
 window.onscroll = function(){
    document.querySelector(".strech").style.animation=" large 2s linear 2s 1 normal forwards"
 }
-
-  function menu (){
-      const tog = document.querySelector(".toggle");
-      const nav = document.querySelector(".nav")
-      tog.classList.toggle("active")
-      nav.classList.toggle("active")
-  }
 
   function thank() {
     alert("thanks for message me 🙂");
