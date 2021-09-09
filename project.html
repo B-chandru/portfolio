@@ -25,49 +25,35 @@
     }
 
                      /* navigation */
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  header .logo {
-    font-size: 2em;
-    color: var(--color1);
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  
-  header .nav {
-    position: relative;
-    display: flex;
-  }
-  
-  header .nav li {
-    list-style: none;
-    padding: 10px;
-  }
-  
-  header .nav li a {
-    color: var(--color2);
-    margin-left: 40px;
-    text-decoration: none;
-  }
-  header .nav li a:hover{
-    color: var(--color1);
-    letter-spacing: 2px;
+  .nav{
+  justify-content: space-evenly;
+  display: flex;
+  box-shadow: 0px 2px 8px #fafafa6b;
+}
+.nav li {
+  list-style: none;
+  padding: 10px;
+}
+.nav li a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: var(--color1);
+   transition: all 0.3s linear 0s;
+}
+.nav li a:hover{
+  color: var(--color2);
+  border-bottom: 2px solid var(--color1);
 
-  }
+}
+.nav li a .fas,
+.nav li a .far{
+    padding:7px
+}
+  
+ 
 
   .center{
-      margin-top: 93px;
+      margin-top: 17px;
 display: grid;
 place-items: center;
     }
@@ -76,7 +62,6 @@ place-items: center;
       text-align: center;
     }
     .project{
-      margin-top: 30px;
       padding: 30px;
       display: grid;
       place-items: center;
@@ -275,44 +260,13 @@ place-items: center;
         grid-gap: 10px;
       }
     }
-
-@media screen and (max-width: 991px) {
-  header {
-    padding: 12px 40px;
-  }
-  header ul.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  header ul.nav.active {
-    display: flex;
-  }
-  header .nav li a {
-    color: white;
-    margin-left: 0;
-    text-decoration: none;
-    font-size: 30px;
-  }
-  header .toggle {
-    position: relative;
-    width: 10px;
-    font-size: 31px;
-    color:var(--color1);
-    height: 30px;
-    z-index: 1000;
-  }
-  header .toggle.active {
-    background: #1b0909;
-  }
-}
+    @media screen and (max-width:480px) {
+         #top_P{
+           display: none;
+         }
+            
+        }
+ 
         @media screen and (max-width:360px) {
             html{
                width: fit-content; 
@@ -325,16 +279,14 @@ place-items: center;
 <body>
 
     
-                                <!--For hamburger menu  -->
-<header>
-    <a href="#" class="logo"></a>
-    <div class="toggle" onclick="menu()"><i class="fas fa-bars"></i></div>
+                                <!--For menu  -->
+  <header>
     <ul class="nav" >
-    <li><a href="index.html">home</a></li>
-    <li><a href="#">project</a></li>
-    <li><a href="#con">contact</a></li>
-    </ul>
-</header>
+      <li><a href="index.html"><i class="fas fa-home"></i><span id="top_P">Home</span></a></li>
+      <li><a href="project.html"><i class="far fa-folder"></i><span id="top_P"> Project</span> </a></li>
+     <li><a href="#con"><i class="fas fa-phone-alt"></i><span id="top_P">Contact</span></a></li>
+  </ul>                      
+  </header>
     
 <!-- FOR DISPLAYING PROJECTS -->
 <div class="center">
@@ -448,13 +400,6 @@ place-items: center;
        window.onscroll = function(){
    document.querySelector(".strech").style.animation=" large 2s linear 2s 1 normal forwards"
 }
-
-  function menu (){
-      const tog = document.querySelector(".toggle");
-      const nav = document.querySelector(".nav")
-      tog.classList.toggle("active")
-      nav.classList.toggle("active")
-  }
 
   function thank() {
     alert("thanks for message me 🙂");
